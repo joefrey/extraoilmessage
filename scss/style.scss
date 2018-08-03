@@ -1,3 +1,73 @@
 @import "bootstrap/functions";
 @import "bootstrap/variables";
 @import "bootstrap/mixins";
+
+body {
+	font-family: $font-family-sans-serif;
+	font-size: 20px;
+	line-height: 1.5;
+	font-weight: 300;
+
+	background-color: #6c5b7b;
+}
+
+.navbar {
+	background: none!important;
+	margin-top: 50px;
+
+	.nav-item {
+		.nav-link {
+			font-size: 14px;
+			letter-spacing: .05em;
+			text-transform: uppercase;
+			padding-top: 20px;
+			font-weight: bold;
+			padding-bottom: 20px;
+			font-weight: 700;
+		}
+	}
+}
+
+.tagline {
+	font-size: 12px;
+	position: relative;
+	margin-top: 30px;
+	color: $black;
+	font-weight: 400;
+	text-transform: uppercase;
+	// font-style: italic;
+}
+
+.wrap {
+	padding-top: 3em;
+	padding-bottom: 3em;
+}
+.logo {
+	// display: inline-block;
+	text-align: center;
+	display: block;
+	margin-bottom: 3em;
+	a {
+		color: $white;
+		text-transform: uppercase;
+		letter-spacing: .2em;
+		font-size: 20px;
+		border: 2px solid $white;
+		padding: 10px 15px;
+		text-decoration: none;
+	}
+}
+.intro-scripture {	
+	position: relative;
+	font-size: 30px;
+	max-width: 600px;
+	margin: 0 auto;
+	margin-bottom: 50px;
+	color: #000;
+	@include media-breakpoint-up(md) {
+		font-size: 50px;	
+	}
+	.scripture {
+		font-size: 20px;
+	}
+}
