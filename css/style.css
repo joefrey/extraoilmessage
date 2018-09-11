@@ -115,7 +115,9 @@ article p {
     font-weight: 600;
     color: #000; }
   article p em {
-    line-height: 1.5; }
+    line-height: 1.5;
+    font-weight: 600;
+    color: #212529; }
 
 article .row p:last-child {
   margin-bottom: 0; }
